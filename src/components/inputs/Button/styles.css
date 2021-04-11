@@ -1,0 +1,18 @@
+.button-component{
+    padding: 5px 20px;
+    border-radius: 8px;
+    /* outline-width: none; */
+    border: none;
+    background-color: var(--button-primary-color);
+    color: var(--text-primary-color);
+    font-weight: 600;
+    margin: 10px;
+    
+}
+
+.button-component:hover{
+    transition: 0.2s;
+    opacity: 0.8;
+    cursor: pointer;
+    box-shadow: -1px -1px 10px var(--text-primary-color) ;
+}

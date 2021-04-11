@@ -1,0 +1,32 @@
+.home-container{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   width: 100%;
+   min-height: 75vh;
+}
+
+.home-container .card-personalized img:hover{
+   background-color: rgba(0, 0,0, 0.06);
+   filter: drop-shadow(1px 1px 3px #000);
+   transition: .2s;
+}
+
+.home-container .card-groups{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   width: 100%;
+}
+
+@media(max-width:768px){
+  .home-container .card-personalized img{
+      background-color: rgba(0, 0,0, 0.06);
+      filter: drop-shadow(5px 5px 5px #000);
+      transition: filter 1s;
+  }
+
+  .home-container .card-groups{
+      display: flex;
+  }
+}
+

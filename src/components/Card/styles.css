@@ -1,0 +1,48 @@
+.card-personalized .card-body .card-text{
+
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.card-personalized img{
+    max-height: 200px;
+    object-fit: contain;
+}
+
+
+@media(max-width: 768px){
+    .card-personalized{
+        width: 100%;
+        margin: none;
+    }
+    
+    .card-personalized img{
+        max-height: 370px;
+    }
+  
+}
+
+@media(max-width:400px){
+    .card-personalized{
+        min-width: 200px;
+        border: none;
+    }
+  
+}
+
+@media(min-width: 1200px){
+    .container-site .card-groups{
+        display: grid;
+        grid-template-columns: repeat(3, 28vw) ;    
+    }
+
+    .container-admin .card-groups{
+        display: grid;
+        grid-template-columns: repeat(3, 25vw) ;    
+    }
+
+}

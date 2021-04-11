@@ -1,0 +1,47 @@
+.mini-card{
+    margin-bottom: 5px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.mini-card .image img{
+    height: 90px;
+    object-fit: contain;
+}
+
+@media(max-width: 768px){
+    .mini-card{
+        width: 100%;
+        margin: none;
+    }
+    
+    .mini-card img{
+        max-height: 370px;
+    }
+    .card-groups{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width:400px){
+    .mini-card{
+        min-width: 200px;
+        border: none;
+    }
+}
+
+
+@media(min-width: 1200px){
+    .container-site .card-groups{
+        display: grid;
+        grid-template-columns: repeat(3, 28vw) ;    
+    }
+
+    .container-admin .card-groups{
+        display: grid;
+        grid-template-columns: repeat(3, 25vw) ;    
+    }
+
+}

@@ -1,0 +1,13 @@
+.container-alert {
+    background-color: #fff3cd;
+    border: 2px solid #ffecb5;
+    padding: 10px;
+    margin: 10px;
+}
+
+.container-alert  .content{
+    color: #664d03;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
